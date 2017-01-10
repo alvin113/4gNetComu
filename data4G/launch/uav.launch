@@ -1,0 +1,6 @@
+
+<launch>
+	<!--<node name="server4G" pkg="data4G" type="server4G" />-->
+	<include file="$(find data4G)/launch/uav_no_px4.launch" />
+	<include file="$(find mavros)/launch/px4.launch" />
+</launch>

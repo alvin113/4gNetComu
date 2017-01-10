@@ -1,0 +1,9 @@
+<launch>
+  	<node name="server_remote2_14782" pkg="data4G" type="server4G_remote2" output="screen" args="14782" />
+  	<node name="testReceiver" pkg="ros_h264_streamer" type="testReceiver" output="screen" />
+  	<node name="keyboard" pkg="rqt_image_view" type="keyboard" />
+        <node name="rqt_image_view" pkg="rqt_image_view" type="rqt_image_view" />
+        <!--
+	<include file="$(find data4G)/launch/dronedisplay.launch" />
+        -->
+</launch>
